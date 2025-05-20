@@ -3,5 +3,6 @@
 #include <string>
 std::string greeting(std::string name);
 void formatAddress(std::string* address);
-std::string closing(std::string prodName);
+void closing(std::string prodName);
+void printProducts(std::string items[], float productPrices[], int size);
 #endif 
