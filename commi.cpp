@@ -10,6 +10,11 @@ void formatAddress(std::string* address) {
         (*address)[i] = toupper((*address)[i]);
     }
 }
-std::string closing(std::string prodName) {
-    return "We're sad to see you go, but we hope you and your home enjoy the " + prodName + "!";
+void closing(std::string prodName) {
+    std::cout << "We're sad to see you go, but we hope you and your home enjoy the " + prodName + "!" << std::endl;
+}
+void printProducts(std::string items[], float productPrices[], int size) {
+    for (int i = 0; i < size; i++) {
+        std::cout << (i + 1) << ") " << items[i] << ": " << productPrices[i] << std::endl;
+    }
 }
